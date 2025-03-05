@@ -14,4 +14,4 @@ This project used HTML, CSS, and JavaScript logic to create new form elements an
 
 This project is deployed on GitHub Pages:
 
-- ADD LINK HERE
+- [Deployment Link](https://zmarks00.github.io/se_project_todo-app-1/)

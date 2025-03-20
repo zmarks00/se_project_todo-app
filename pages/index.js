@@ -23,6 +23,8 @@ const addTodoPopup = new PopupWithForm({
     const todo = generateTodo(values);
     section.addItem(todo);
 
+    todoCounter.updateTotal(true);
+
     addTodoPopup.close();
     newTodoValidator.resetValidation();
   },
@@ -30,7 +32,11 @@ const addTodoPopup = new PopupWithForm({
 addTodoPopup.setEventListeners();
 
 function handleCheck(completed) {
-  todoCounter.updateCompleted(completed);
+  if (completed) {
+    todoCounter.updateCompleted(true);
+  } else {
+    todoCounter.updateCompleted(false);
+  }
 }
 
 function handleDelete(completed) {
